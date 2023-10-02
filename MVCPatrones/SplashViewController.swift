@@ -12,6 +12,8 @@ class SplashViewController: UIViewController {
     //  MARK: - Outlets
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
+    
+    
     // MARK: - LyfeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
