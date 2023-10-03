@@ -33,8 +33,15 @@ class HomeTableViewCell: UITableViewCell {
         nameHomeCell.text = nil
     }
     
-    func updateView() {
-      
+    func updateView(data: CharacterModel) {
+        update(name: data.name)
+        update(image: data.image)
     }
-
+    private func update(name: String?){
+        nameHomeCell.text = name ?? ""
+    }
+    private func update(image: String?){
+        imageCell.image = UIImage(named: image ?? "")
+    }
+    
 }
